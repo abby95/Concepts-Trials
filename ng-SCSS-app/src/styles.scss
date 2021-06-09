@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "/css/variables";
+
+* {
+  font-family: "Quicksand", sans-serif;
+  // color: $primaryColor;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: $lightTextColor;
+}

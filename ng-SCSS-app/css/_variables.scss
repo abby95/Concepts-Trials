@@ -1,0 +1,12 @@
+$primaryColor: #810000;
+$secondaryColor: #ce1212;
+$lightTextColor: #eeebdd;
+$darkTextColor: #1b1717;
+$SaSSColor: #cd6799;
+
+@mixin FlexCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

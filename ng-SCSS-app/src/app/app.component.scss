@@ -1,0 +1,11 @@
+@import "/css/variables";
+
+.pageContent {
+  // @include FlexCenter;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  overflow-y: auto;
+  // padding-top: 100px;
+  padding: 10px;
+  padding-bottom: 20px;
+}

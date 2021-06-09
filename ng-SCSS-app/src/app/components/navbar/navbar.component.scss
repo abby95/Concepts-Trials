@@ -1,0 +1,36 @@
+@import "/css/variables";
+
+.navbar {
+  background-color: $SaSSColor;
+  height: 60px;
+  padding: 10px;
+  color: $lightTextColor;
+}
+
+.brandName {
+  font-weight: 900;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#brandIcon {
+  width: 3.75vw;
+  margin-top: -8px;
+  // margin-right: 5px;
+}
+
+.navlinks {
+  @include FlexCenter;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.links {
+  padding: 5px;
+}
+
+.active {
+  font-weight: 900;
+  border-bottom: 2px solid white;
+}

@@ -1,0 +1,56 @@
+@import "/css/cards";
+
+.lightCard {
+  @include Card($SaSSColor, white);
+  .header {
+    @include cardHeader($SaSSColor, $lightTextColor);
+    border-bottom: 2px solid $lightTextColor;
+  }
+  .definition {
+    @include cardDefinition($darkTextColor);
+  }
+
+  .link {
+    color: $darkTextColor;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.darkCard {
+  @include Card($lightTextColor, $darkTextColor);
+
+  .header {
+    @include cardHeader($SaSSColor, $darkTextColor);
+    border-bottom: 2px solid $SaSSColor;
+  }
+  .definition {
+    @include cardDefinition($lightTextColor);
+  }
+
+  .link {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: left;
+
+    a {
+      color: $SaSSColor !important;
+      &:hover {
+        color: $lightTextColor !important;
+      }
+    }
+  }
+}
+
+.card {
+  margin-top: 10px;
+}
+
+.cardContent {
+  height: 30vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
